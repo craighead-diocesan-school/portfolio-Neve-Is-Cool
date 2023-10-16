@@ -114,11 +114,69 @@
 
 <div class="container">
   <span class="tag is-danger">Go Left</span>
-  <p>To create our code to get our claw to go left, we had to set our second motor, which was connected to the rotation percentage of the claw, which in turn controlled the movements from left to right. The speed of the second motor (M2) was set to 20, after some experimentation. 
-    We started off with our claw set at 100, and each time we moved the claw, the speed was outrageous, throwing off the balance and tipping our claw over repetitively. Once this was set to 20, we also discovered we must paused it, then set the speed to zero. Otherwise the speed would
+  <p>To create our code to get our claw to go left, we had to code our second motor, which was connected to the rotation percentage of the claw. The rotation bottom part of the claw controlled the movements from left to right. The speed of the second motor (M2) was set to 20, after some experimentation. 
+    We started off with our claw set at 100, and each time we moved the claw, the speed was outrageous, throwing off the balance and tipping over our claw repetitively. Once this was set to 20, we also discovered we must pause it, then set the speed to zero. Otherwise the speed would
     continue after the 1000ms pause. Then we cleared the screen. Once again we used the microbit LED system to keep track of the correct and incorrect motions of our claw and code. </p>
   <img src ="Go left code.png">
   </div>
+
+<hr>
+
+<div class="container">
+  <span class="tag is-danger">Go Right</span>
+  <p>To create our code to get our claw to go right, we had to set our bottom rotation motor, the second motor, to have a speed opposite to the left one. Since the speed of M2 was 20 for the claw to spin the direction left, we knew we must have the speed at -20 for the claw to spin in the opposite direction.
+    Once we had coded for this, we got our claw to pause for 1000ms and set the speed to zero, so it wouldn't continue to rotate more. We once again used LED's to display the desired action of the code in case of errors.</p>
+  <img src ="Go right code.png">
+  </div>
+
+<hr>
+
+<div class="container">
+  <span class="tag is-danger">Grab</span>
+  <p>Our Grab and Release code required us to use another motor whilst coding to control and move the mouth of the claw. This motor was at the top of the claw and was connected to the rotating gears which opened and closed the claw. To code this, we set the motor (M1) to a speed of 20. This speed was decided after some experimentation, 
+    and seeing how the different speeds controlled how opened the claw would become. On top of that, we added a 1000ms pause to the code and set the speed to zero, so that the motor would fully stop its action. We once again used the LED system for clarity when issues arised.</p>
+  <img src ="Grab Code.png">
+  </div>
+
+<hr>
+
+<div class="container">
+  <span class="tag is-danger">Release</span>
+  <p>To create our code for our claw to release, we knew we just had to do the opposite to the grab code. This meant we still used the M1 motor, as it still controls the same gears we need controlled for the release code. The speed was set to -20 as we wanted it to be the exact same speed as the grab code so it could be the exact same amount. This stopped the claw
+    from crushing in on itself. We made the motor pause for 1000ms and then set the speed to zero once again. We used our LED's to show a similar image to an open claw, so we knew that it was the claw attempting to release when it came to errors.
+  </p>
+  <img src ="Release code.png">
+  </div>
+
+<hr>
+
+<div class="container">
+  <span class="tag is-danger">Controls</span>
+  <p> This code controlled the connection to the other microbit in which customers used to play our claw machine game. We had the radio code from the other microbit connected to our microbit attached to the claw. We had a system where on the microbit, customers hit one button for left, one for right, and both for end. Our end code used the code we'd created for going down, grabbing, up, left and releasing.
+    We found this system was simpler than a pile of ridiculously long code where we couldn't tell which piece of code completed which action.</p>
+  <img src ="Controls Code.png">
+  </div>
+
+<hr>
+
+<div class="container">
+  <span class="tag is-danger">Radio</span>
+  <p>As mentioned before, we had to have our code options radioed to our microbit. Our other microbit had a simple selection of code which sent radio signals when certain buttons were pressed which greatly helped with our system. We had our radio system set on start so that it was guaranteed to work immediately. We also began our code with setting our claw upright so that was one less thing we had to worry about.</p>
+  <img src ="Radio Connection code.png">
+  </div>
+
+<hr>
+
+<div class="container">
+  <span class="tag is-danger">Manual Grab & Release</span>
+  <p>In our code, we decided we had to create manual code to reset our grab and release. This was because after each person used our claw, it always was still slightly opened at the end. These buttons were located on the sides of our claw. In between uses of our claw machine, we closed the claw entirely until it was fully closed, following that we pressed our release grab button once.
+    This was so it was guaranteed to fully close when people were using our machine.</p>
+  <img src ="Claw GrabRelease functions code.png">
+  </div>
+
+<hr>
+
+<img src ="The Claw Advertisement.jpg"
 
 
 </main>
